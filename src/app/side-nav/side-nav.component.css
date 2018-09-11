@@ -1,0 +1,12 @@
+p {padding:10px;
+    margin: 0;
+    text-align: center;
+    font-size: 14PX;
+}
+a {
+    text-decoration: none;
+    color:white
+}
+p:hover {
+    background-color: #006fa0
+}

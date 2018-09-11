@@ -1,0 +1,37 @@
+<div class="row">
+  <section class="col">
+    <!-- Left Side -->
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Top -->
+        <h3>Networking <a href="#">view all ></a></h3>
+        <ng-container *ngIf="menuItems && menuItems.top">
+          <p *ngFor="let x of menuItems.top">
+            <a [href]="x[1]">{{x[0]}}</a>
+          </p>
+        </ng-container>
+      </div>
+      <div class="col-md-12">
+        <!-- Bottom -->
+        <h5>I NEED TO..</h5>
+        <ng-container *ngIf="menuItems && menuItems.bottom">
+          <p *ngFor="let x of menuItems.bottom">
+            <a [href]="x[1]">{{x[0]}}</a>
+          </p>
+        </ng-container>
+      </div>
+    </div>
+  </section>
+  <!-- Right Side -->
+  <section class="col">
+    <div>
+      <h3 class="pt-5">TOP PRODUCTS</h3>
+      <ng-container *ngIf="menuItems && menuItems.right">
+        <p *ngFor="let x of menuItems.right">
+          <a [href]="x[1]">{{x[0]}}</a>
+        </p>
+      </ng-container>
+      <img class="img-fluid" src="../../assets/network.jpg">
+    </div>
+  </section>
+</div>

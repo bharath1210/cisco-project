@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="row">
+        <section class="col-md-4" style="background-color: #006fa0">
+            <div class="row">
+                <section class="col-md-4 p-0" style="background-color: #065071">
+                    <app-side-nav (menuChange)="handleMenuChange($event)"></app-side-nav>
+                </section>
+                <section class="col-md-8 pr-0">
+                    <app-side-nav-middle [menuKey]="midleMenuKey" (menuChange)="handleSubMenuChange($event)"></app-side-nav-middle>
+                </section>
+            </div>
+        </section>
+        <section class="col-md-8 p-4">
+            <app-side-nav-right [menuKey]="subMenuKey"></app-side-nav-right>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+a {
+    color:#007493;
+    text-decoration: none;
+}
+p {padding:3px}
+p:hover {
+    background-color: rgba(159,206,218,0.4);
+    
+}
